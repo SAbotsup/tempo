@@ -332,19 +332,30 @@ $watchlistLabels = [
                                         <?php endif; ?>
                                     </div>
                                     <div class="item item-title">
-                                        <span class="item-head">Studios:</span>
-                                        <a class="name" href="/producer/<?= htmlspecialchars(strtolower(str_replace(" ", "-", $animeData['studio']))) ?>"><?= htmlspecialchars($animeData['studio']) ?></a>
-                                    </div>
-                                    <div class="item item-title">
-                                        <span class="item-head">Producers:</span>
-                                        <?php if (!empty($animeData['producer']) && is_array($animeData['producer'])): ?>
-                                            <?php foreach ($animeData['producer'] as $producer): ?>
-                                                <a class="name" href="/producer/<?= htmlspecialchars(strtolower(str_replace(" ", "-", $producer))) ?>"><?= htmlspecialchars($producer) ?></a>,
-                                            <?php endforeach; ?>
-                                        <?php else: ?>
-                                            <span>No producers available</span>
-                                        <?php endif; ?>
-                                    </div>
+    <span class="item-head">Studios:</span>
+    <?php if (!empty($animeData['studio'])): ?>
+        <?php 
+            $studioSlug = preg_replace('/[^a-z0-9-]+/', '', strtolower(str_replace(" ", "-", $animeData['studio'] ?? '')));
+        ?>
+        <a class="name" href="/producer/<?= htmlspecialchars($studioSlug) ?>"><?= htmlspecialchars($animeData['studio']) ?></a>
+    <?php else: ?>
+        <span>No studio available</span>
+    <?php endif; ?>
+</div>
+
+<div class="item item-title">
+    <span class="item-head">Producers:</span>
+    <?php if (!empty($animeData['producer']) && is_array($animeData['producer'])): ?>
+        <?php foreach ($animeData['producer'] as $producer): ?>
+            <?php 
+                $producerSlug = preg_replace('/[^a-z0-9-]+/', '', strtolower(str_replace(" ", "-", $producer ?? '')));
+            ?>
+            <a class="name" href="/producer/<?= htmlspecialchars($producerSlug) ?>"><?= htmlspecialchars($producer) ?></a><?php if (next($animeData['producer'])) echo ','; ?>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <span>No producers available</span>
+    <?php endif; ?>
+</div>
                                     <div class="film-text w-hide">
                                         <?= htmlspecialchars($websiteTitle) ?> is the best site to watch <strong><?= htmlspecialchars($animeData['title'] ?? $animeData['jname']) ?></strong> SUB online, or you can even watch <strong><?= htmlspecialchars($animeData['title'] ?? $animeData['jname']) ?></strong> DUB in HD quality.
                                         You can also find <a class="name" href="/producer/<?= htmlspecialchars(strtolower(str_replace(" ", "-", $animeData['studio']))) ?>"><strong><?= htmlspecialchars($animeData['studio']) ?></strong></a> anime on <?= htmlspecialchars($websiteTitle) ?> website.
