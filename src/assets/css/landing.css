@@ -4,7 +4,7 @@ html {
     position: relative;
 }
 body {
-    background: rgb(32, 31, 49);
+    background: rgb(72, 57, 43);
     font-family: "Poppins", Arial;
     color: #ccc;
     font-size: 14px;
@@ -20,7 +20,7 @@ a {
     color: #aaa;
 }
 a:hover {
-    color: #ffbade;
+    color: #bafeff;
     text-decoration: none;
 }
 button,
@@ -35,7 +35,7 @@ button,
 }
 .btn-highlight {
     font-weight: 600;
-    color: #ffbade;
+    color: #bafeff;
     font-size: 1.2em;
     position: relative;
     padding-left: 50px;
@@ -81,7 +81,7 @@ button,
     line-height: 40px;
     font-size: 20px;
     font-weight: 600;
-    color: #ffbade !important;
+    color: #bafeff !important;
 }
 #xheader_menu {
     width: 100%;
@@ -114,7 +114,7 @@ button,
     letter-spacing: 1px;
 }
 #xheader_menu ul.header_menu-list .nav-item > a:hover {
-    color: #ffbade;
+    color: #bafeff;
 }
 #xheader_browser {
     float: left;
@@ -133,7 +133,7 @@ button,
     color: #fff;
 }
 #xheader_browser.active .header-btn {
-    color: #ffbade;
+    color: #bafeff;
 }
 /* footer */
 #xfooter-about {
@@ -182,8 +182,8 @@ button,
     left: 0;
     bottom: 0;
     width: 400px;
-    background: rgb(43, 42, 60);
-    background: linear-gradient(90deg, rgba(43, 42, 60, 1) 0%, rgba(43, 42, 60, 0) 100%);
+    background: rgb(72, 57, 43);
+    background: linear-gradient(90deg, rgba(72, 57, 43, 1) 0%, rgba(72, 57, 43, 0) 100%);
 }
 #mw-top .mwt-content .mwt-icon img {
     width: 100%;
@@ -213,7 +213,7 @@ button,
     font-size: 28px;
     font-weight: 700;
     text-align: center;
-    color: #ffbade;
+    color: #bafeff;
     margin: 0 0 10px 0;
 }
 #mw-top .mw-heading-second {
@@ -228,7 +228,7 @@ button,
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #ffbade;
+    background: #bafeff;
     left: 0;
     position: absolute;
     top: 8px;
@@ -264,7 +264,7 @@ button,
     border-radius: 12px;
     padding: 15px 20px;
     font-weight: 600;
-    background: #ffbade !important;
+    background: #bafeff !important;
     color: #111 !important;
     border: none !important;
     box-shadow: none !important;
@@ -303,7 +303,7 @@ button,
     cursor: pointer;
     display: inline-block;
     width: 50px;
-    background: #ffbade;
+    background: #bafeff;
     border-radius: 12px;
 }
 #xsearch.home-search .search-content .search-submit .search-icon i {
@@ -318,7 +318,7 @@ button,
 }
 .mw-buttons .btn-primary {
     font-weight: 600;
-    background: #ffbade !important;
+    background: #bafeff !important;
     color: #111 !important;
     padding: 15px 30px;
     transition: all 0.2s ease 0s;
@@ -389,7 +389,7 @@ button,
     color: #fff;
 }
 .zr-news .item .zrn-title:hover {
-    color: #ffbade;
+    color: #bafeff;
 }
 .zr-news .item .zrn-title .news-title {
     font-size: 16px;
@@ -408,11 +408,11 @@ button,
 }
 .zr-news.zr-news-list {
     padding: 0px 20px 50px;
-    background: rgb(65, 66, 72);
-    background: -moz-linear-gradient(180deg, rgba(65, 66, 72, 0) 0%, rgba(65, 66, 72, 1) 30%, rgba(65, 66, 72, 1) 70%, rgba(65, 66, 72, 0.050840404521183435) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(65, 66, 72, 0) 0%, rgba(65, 66, 72, 1) 30%, rgba(65, 66, 72, 1) 70%, rgba(65, 66, 72, 0.050840404521183435) 100%);
-    background: linear-gradient(180deg, rgba(65, 66, 72, 0) 0%, rgba(65, 66, 72, 1) 30%, rgba(65, 66, 72, 1) 70%, rgba(65, 66, 72, 0.050840404521183435) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#414248",endColorstr="#414248",GradientType=1);
+    background: rgb(87, 69, 54);
+    background: -moz-linear-gradient(180deg, rgba(87, 69, 54, 0) 0%, rgba(87, 69, 54, 1) 30%, rgba(87, 69, 54, 1) 70%, rgba(87, 69, 54, 0.050840404521183435) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(87, 69, 54, 0) 0%, rgba(87, 69, 54, 1) 30%, rgba(87, 69, 54, 1) 70%, rgba(87, 69, 54, 0.050840404521183435) 100%);
+    background: linear-gradient(180deg, rgba(87, 69, 54, 0) 0%, rgba(87, 69, 54, 1) 30%, rgba(87, 69, 54, 1) 70%, rgba(87, 69, 54, 0.050840404521183435) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#574536",endColorstr="#574536",GradientType=1);
 }
 .zr-news.zr-news-list .item {
     margin-bottom: 20px;
@@ -506,7 +506,7 @@ button,
 .share-buttons .share-buttons-block .sbb-title span {
     font-weight: 600;
     font-size: 14px;
-    color: #ffbade;
+    color: #bafeff;
 }
 .share-buttons .share-buttons-block .sbb-social {
     float: left;
@@ -576,7 +576,7 @@ button,
         font-size: 16px;
     }
     #xheader_menu ul.header_menu-list .nav-item > a:hover {
-        color: #ffbade;
+        color: #bafeff;
     }
     #xheader_menu.active {
         display: block !important;
@@ -811,7 +811,7 @@ body.xmas-ui .mw-keywords .mwk-item {
     color: #5eadb5;
 }
 body.xmas-ui .mw-keywords .mwk-item:hover {
-    color: #ffbade;
+    color: #bafeff;
 }
 body.xmas-ui #mw-top {
     background: rgb(34, 95, 98);
