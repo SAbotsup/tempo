@@ -1,7 +1,8 @@
 <?php
-
-require_once('src/component/anime/qtip.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/auth.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/_config.php');
+require_once('src/component/anime/qtip.php');
+
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -780,10 +781,9 @@ $totalVotes = $like_count + $dislike_count;
                         <?php
                         $animeId = $animeData['id'];
                         $episodeId = isset($_GET['ep']) ? $_GET['ep'] : '1';
-                        $user_id = $_COOKIE['userID'] ?? null;
                         $user = null;
 
-                        if ($user_id) {
+                        if (defined('LOGGED_IN') && LOGGED_IN) {
                             $stmt = $conn->prepare("SELECT username, image FROM users WHERE id = ?");
                             if ($stmt === false) {
                                 die("Database prepare failed: " . mysqli_error($conn));
